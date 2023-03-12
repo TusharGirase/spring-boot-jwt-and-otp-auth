@@ -23,6 +23,6 @@ public class MVCConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/**").allowedOrigins(crossOriginDomain).allowCredentials(true).maxAge(3600);
+		registry.addMapping("/**").allowedHeaders("*").allowedOrigins(crossOriginDomain).allowCredentials(true).maxAge(3600);
 	}
 }

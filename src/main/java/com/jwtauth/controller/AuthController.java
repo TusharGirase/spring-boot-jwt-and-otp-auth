@@ -1,9 +1,7 @@
 package com.jwtauth.controller;
 
-import java.util.Arrays;
 import java.util.stream.Collectors;
 
-import javax.mail.MessagingException;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,11 +24,8 @@ import com.jwtauth.dto.UserPrincipal;
 import com.jwtauth.jwt.JwtProvider;
 import com.jwtauth.service.OTPMailService;
 
-import lombok.extern.log4j.Log4j2;
-
 @RestController
 @RequestMapping("/auth")
-@Log4j2
 @CrossOrigin
 public class AuthController {
 	@Autowired
